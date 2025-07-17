@@ -1,0 +1,117 @@
+.parent{
+    height: 400px;
+ background-color: navy;
+}
+.navparent
+{
+    background-color: navy;
+    height:50px;
+    display: flex;
+     justify-content: space-evenly;
+}
+ .link
+{
+    padding-top: 15px;
+    
+    
+}
+a{
+    color: white;
+    padding: 10px;
+}
+button
+{
+    background-color: rgb(40, 150, 202);
+    height: 35px;
+    padding-top: 1x;
+    margin-top: 10px;
+    color: rgb(187, 216, 17);
+    border-radius: 10px;
+    border-color: bisque;
+    border-style: solid;
+    width: -content;
+}
+.b2
+{
+    background-color: rgb(156, 146, 51);
+    color: black;
+}
+.child
+{
+    /* display: flex;
+    justify-content: space-between; */
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(1,1fr);
+    padding: 20px;
+}
+/* .child1
+{
+    padding-left: 295px;  
+    margin: 90px; 
+     height:100px;
+    width: 300px;
+}
+p{
+    width: 300px;
+} */
+.child2
+{
+    margin: 90px;
+     padding-right: 150px;
+    height: 200px;
+    width: 290px;
+    background-color: rgb(167, 201, 201);
+}
+.parent2
+{
+    height: 650px;
+    background-color: beige;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    padding: 20px;
+}
+.parent3
+{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(1,1fr);
+    background-color: navy;
+    padding :20px
+}
+.parent4
+{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+}
+.child4
+{
+    grid-column: span 2;
+
+    
+}
+.child5
+
+{
+    /* display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(1,1fr); */
+
+    display: flex;
+    justify-content: space-evenly;
+    justify-items: center;
+    
+    background-color: azure;
+    
+     height: 60vh;
+    width: 20vw;
+
+}
+.child6
+{
+    background-color: navy;
+    height: 60vh;
+    width: 20vw;
+}

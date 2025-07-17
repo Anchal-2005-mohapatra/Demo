@@ -1,12 +1,12 @@
 /* *{
  color: purple;
 } */
-/* .para
+.para
 {
      display: block; 
-    color: maroon;
+    color: pink;
     height: 40px;
-} */
+}
 .para1
 {
     display: flex;
@@ -16,4 +16,62 @@
 {
     display: flexbox;
     height: 40px;
+}
+.para:hover{
+    color: darkred;
+
+}
+.parent
+{
+    background-color: navy;
+    height: 500px;
+    display: flex;
+    flex-direction: row-reverse;
+     flex-wrap: wrap;
+     justify-content: space-around; 
+    align-items: center;
+   
+    /* gap: 40px; */
+}
+.child1
+{
+    background-color: white;
+    width: 80px;
+    height:80px
+
+}
+.child
+{
+    background-color: white;
+    width: 80px;
+    height:80px
+
+}
+.design
+{
+    height: 500px;
+    background-color: brown;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(7,1fr);
+    
+
+}
+.first
+{
+    grid-row: span 2;
+}
+
+.high
+{
+    background-color: purple;
+    height: 600px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+
+
+}
+.low1
+{
+    grid-row: span 2;
 }
