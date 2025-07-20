@@ -1,0 +1,99 @@
+.unit
+{
+    height: 100px;
+ background-color: beige;
+ width: 16vw;
+}
+.unit2
+{
+    height: 40%;
+    background-color: rgb(191, 124, 25);
+}
+.unit3
+{
+    background-color: blue;
+    height: 12vmin;
+    width: 17vmin;
+    font-size: 30px;
+}
+.transform
+{
+    font-size: 1rem;
+}
+.rotate
+{
+    height: 100px;
+    width: 100px;
+    background-color: blueviolet;
+    /* transform: rotateX(40deg); */
+    color: white;
+    /* transform: rotateY(40deg); */
+    /* transform: rotateZ(40deg); */
+    transform: rotate(30%);
+}
+.scale
+{
+    height: 100px;
+    width: 100px;
+    background-color: brown;
+    /* transform: scale(2); */
+      transform: scaleX(5); 
+      /* transform: scaleY(2); */
+       /* transform: scale(2,1.5);  */
+}
+.translate
+{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(23, 153, 205);
+    /* transform: translate(400px); */
+     /* transform: translateX(400px);
+      transform: translateY(400px); */
+       transform: translate(500px, 50px);
+       color: bisque;
+}
+.skew
+{
+     height: 100px;
+    width: 100px;
+    background-color: rgb(239, 6, 2);
+    /* transform: skewX(30deg); */
+     /* transform: skewy(30deg); */
+      transform: skew(30deg, 40deg);
+}
+
+#btn
+{
+    background-color: green;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    padding: 10px 30px;
+    transition-property: transform;
+    transition-duration: o.4s;
+    transition-timing-function: ease-in-out;
+}
+#btn:hover{
+    background-color: rgb(18, 39, 39);
+}
+#btn:active
+{
+    transform:scale(1.3)
+}
+#hero
+{
+    background-color: chartreuse;
+    margin: auto;
+    height: 160px;
+    width: 200px;
+     /* transition-property: transform; */
+    /* transition-duration: o.4s; */
+    /* transition-timing-function: ease-in;
+    transition-delay: 0.6s; */
+    transition: transform 4s;
+
+}
+#hero:hover{
+    transform: scale(2);
+}
