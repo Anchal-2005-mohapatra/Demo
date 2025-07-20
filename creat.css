@@ -7,17 +7,36 @@
     background-color: navy;
     height:50px;
     display: flex;
-     justify-content: space-evenly;
+     justify-content: space-around;
 }
  .link
 {
     padding-top: 15px;
-    
-    
+}
+.white
+{
+    color: white;
+
+}
+.white:hover
+{
+    color: rgb(201, 189, 29);
 }
 a{
     color: white;
     padding: 10px;
+    text-decoration: none;
+}
+
+ button:hover{
+    color:black ;
+    background-color: aliceblue;
+     transform: scale(1.1);
+
+} 
+a:hover{
+    color: rgb(201, 189, 29);
+    
 }
 button
 {
@@ -25,16 +44,22 @@ button
     height: 35px;
     padding-top: 1x;
     margin-top: 10px;
-    color: rgb(187, 216, 17);
+    color:white;
     border-radius: 10px;
     border-color: bisque;
     border-style: solid;
     width: -content;
+    transition: transform 0.5s;
 }
+
+   
 .b2
 {
-    background-color: rgb(156, 146, 51);
+    background-color: rgb(167, 212, 68);
     color: black;
+}
+.b2:hover{
+    background-color: aliceblue;
 }
 .child
 {
@@ -84,34 +109,269 @@ p{
 {
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(2,1fr);
+    grid-template-rows: repeat(1,1fr);
 }
 .child4
 {
-    grid-column: span 2;
-
-    
+   /* padding-left: 40vw; */
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
 }
-.child5
+  .child5
 
 {
-    /* display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(1,1fr); */
-
     display: flex;
-    justify-content: space-evenly;
-    justify-items: center;
-    
+    /* justify-content: space-evenly;  */
+     justify-content:center;
     background-color: azure;
-    
-     height: 60vh;
-    width: 20vw;
+    padding: 30px;
+    margin: 20px;
 
-}
+    
+     /* height: 60vh;
+    width: 20vw; */
+
+} 
 .child6
 {
-    background-color: navy;
+    background-color: rgb(174, 174, 222);
     height: 60vh;
-    width: 20vw;
+    width: 15vw;
+    padding: 20px;
+} 
+.child7
+{
+    background-color: navy;
+    height: 62vh;
+    width: 15vw;
+    padding: 20px;
+    margin: 5px;
+    color: white;
+} 
+.child8
+{
+    background-color: rgb(174, 174, 222);
+    height: 60vh;
+    width: 15vw;
+    padding: 20px;
+} 
+ .child6 .b2
+{
+    background-color: rgb(128, 158, 189);
+    color: black
 }
+.child7.b3
+{
+    background-color: rgb(38, 111, 206);
+    color: white;
+}
+.child8 .b4
+{
+    background-color: rgb(128, 158, 189);
+    color: black
+}
+.b2:hover{
+    background-color: rgb(38, 111, 206);
+    transform: scale(1.1);
+    color: white;
+}
+.b3:hover{
+    background-color: rgb(124, 41, 197);
+    transform: scale(1.1);
+      color: white;
+
+}
+.b4:hover{
+    background-color: rgb(38, 111, 206);
+    transform: scale(1.1);
+      color: white;
+
+}
+.child6:hover
+{
+ transform: scale(1.1);
+ padding: 12px;
+}
+.child7:hover
+{
+ transform: scale(1.1);
+}
+.child8:hover
+{
+ transform: scale(1.1);
+}
+.parent5
+{
+    background-color: navy;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+}
+.child9
+{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(1,1fr);
+}
+.child10
+{
+    padding: auto;
+}
+/* .child11
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} */
+.child12
+{
+    display: flex;
+    justify-content: center;
+}
+.child13
+{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(1,1fr);
+}
+.parent7
+{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(1,1fr);
+    background-color: navy;
+    height: 40vh;
+    color: white;
+}
+.child14
+{
+    display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+.parent8
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+}
+.childch
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.childch .child15
+{
+    height: 200px;
+    width: 250px;
+    padding: 30px;
+    margin: 20px;
+    background-color: whitesmoke;
+    transition: transform 1s;
+    
+}
+.childch .child15:hover{
+    transform: scale(1.1);
+}
+.childch .child16
+{
+    height: 200px;
+    width: 250px;
+    padding: 30px;
+    margin: 20px;
+    background-color: rgb(65, 172, 214);
+    transition: transform 1s;
+}
+.childch .child16:hover{
+    transform: scale(1.1);
+}
+.childch .child17
+{
+    height: 200px;
+    width: 250px;
+    padding: 30px;
+    margin: 20px;
+    background-color: rgb(83, 167, 216);
+    transition: transform 1s;
+}
+.childch .child17:hover{
+    transform: scale(1.1);
+}
+.ob
+{
+    display: flex;
+    flex-direction: row;
+}
+/* .dot
+{ 
+    height: 5px;
+    width: 5px;
+    background-color: black;
+    border-radius: 50%;
+    border: 1px solid black;
+    animation: dotted 1s linear 0.4s infinite alternate ;
+}
+@keyframes dotted {
+    0%
+    {
+        transform: translate(5px);
+    }
+    10%
+    {
+        transform: translate(19px);
+    }
+} */
+ .parent9
+ {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ } 
+ .child20
+ {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .parent10
+ {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(1,1fr);
+    
+ }
+ .parent0{
+    background-color: navy;
+    color: white;
+ }
+ .nav1
+ {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(1,1fr)
+ }
+ .navygate
+ {
+    display: flex;
+    justify-content: space-evenly;
+ }
+ .navygate1
+ {
+    display: flex;
+     justify-content: space-evenly;
+ }
+ 

@@ -1,0 +1,97 @@
+.animation1
+{
+    height: 200px;
+    width: 200px;
+    background-color: aqua;
+    transition: transform 2s;
+}
+.ball
+{
+  height: 50px;
+  width: 50px;
+  background-color: black;
+  border-radius: 50%;
+  margin: auto;
+  animation: drop 0.8s ease-in-out 1s 5 alternate;
+
+  
+}
+.animation1:hover{
+  transform: scale(0.5);
+  /* transform: rotate(40deg); */
+  /* transform: translate(200px, 200px); */
+   /* transform: skew(10deg, 10deg); */
+}
+@keyframes drop{
+  from 
+  {
+    transform: translateY(0px)
+  }
+  to
+  {
+    transform: translateY(150px);
+  }
+  /* 0%
+  {
+    transform: translateY(0px);
+  }
+  10%
+  {
+    transform: translateY(12px);
+  }
+  20%
+  {
+    transform: translateY(13px);
+  }
+  50%
+  {
+    transform: translateY(40px);
+    
+  }
+  67%
+  {
+    transform: translateY(90%);
+  } */
+
+
+
+
+  /* 0%
+  {
+    transform: translate(70px, 140px);
+  }
+  10%{
+    transform: translate(100px, 100px);
+  } */
+}
+.spin
+{
+  /* background-color: brown;
+  height: 250px;
+  width: 250px; */
+  transition: transform 2s ;
+}
+.spin:hover
+{
+   transform: scale(0.4);
+}
+.loader
+{
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: rgb(246, 251, 246);
+  border: 10px solid black;
+  border-top: 10px solid white;
+  animation: load 1s linear infinite alternate ;
+}
+@keyframes load {
+  from
+  {
+    transform: rotate(0deg);
+  }
+  to
+  {
+    transform: rotate(360deg);
+  }
+}

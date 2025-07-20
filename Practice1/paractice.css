@@ -1,0 +1,59 @@
+*
+{
+    background-color: rgb(230, 217, 217);
+    color: rgb(22, 14, 14);
+}
+.container
+{
+    background-color:yellow;
+    padding: 10px;
+    color: rgb(186, 35, 35);
+    /* border: 2px dotted blue; */
+     /* border: 2px solid blue; */
+      /* border: 2px dashed blue; */
+       /* border: 6px double blue; */
+        /* border: 7px groove blue; */
+         /* border: 7px ridge blue; */
+          border: 7px dashed blue;
+
+}
+#main-box
+{
+    background-color: lightgreen;
+    height: 200px;
+    width: 200px;
+    border: 1px solid blue;
+
+}
+.box
+{ 
+
+    background-color: rgb(58, 195, 181);
+    padding: 40px;
+    margin:60px ;
+    border: 5px solid black;
+}
+.div1
+{
+    height: 200px;
+    width: 200px;
+    display: inline;
+    background-color: chocolate;
+    padding: 10px;
+}
+.div2
+{
+   height: 200px;
+    width: 200px;
+    display: block;
+    background-color: rgb(10, 76, 163);
+    padding: 10px;
+}
+.div3
+{
+    height: 200px;
+    width: 200px;
+    display: inline-block;
+    background-color: rgb(203, 11, 11);
+    padding: 10px;
+}
