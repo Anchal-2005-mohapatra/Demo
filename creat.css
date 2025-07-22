@@ -1,10 +1,10 @@
 .parent{
     height: 400px;
- background-color: navy;
+ background-color: rgb(21, 64, 121);;
 }
 .navparent
 {
-    background-color: navy;
+    background-color: rgb(21, 64, 121);;
     height:50px;
     display: flex;
      justify-content: space-around;
@@ -91,10 +91,15 @@ p{
 .parent2
 {
     height: 650px;
-    background-color: beige;
+    background-color:white;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: repeat(2,1fr);
+    padding: 20px;
+}
+img{
+    height: 60%;
+    width: 60%;
     padding: 20px;
 }
 .parent3
@@ -102,7 +107,7 @@ p{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: repeat(1,1fr);
-    background-color: navy;
+    background-color:rgb(21, 64, 121);;
     padding :20px
 }
 .parent4
@@ -143,7 +148,7 @@ p{
 } 
 .child7
 {
-    background-color: navy;
+    background-color: rgb(21, 64, 121);;
     height: 62vh;
     width: 15vw;
     padding: 20px;
@@ -204,7 +209,7 @@ p{
 }
 .parent5
 {
-    background-color: navy;
+    background-color: rgb(21, 64, 121);
     color: white;
     display: flex;
     flex-direction: column;
@@ -239,13 +244,22 @@ p{
     display: grid;
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: repeat(1,1fr);
+    
+   
+}
+.child13 img{
+     height: 20vh;
+}
+.child13 .img1 img{
+     height: 10vh;
+     margin-top: 40px;
 }
 .parent7
 {
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: repeat(1,1fr);
-    background-color: navy;
+    background-color: rgb(21, 64, 121);;
     height: 40vh;
     color: white;
 }
@@ -315,6 +329,10 @@ p{
     display: flex;
     flex-direction: row;
 }
+.ob img{
+    height: 9vh;
+    padding: 20px;
+}
 /* .dot
 { 
     height: 5px;
@@ -355,7 +373,7 @@ p{
     
  }
  .parent0{
-    background-color: navy;
+    background-color: rgb(21, 64, 121);;
     color: white;
  }
  .nav1
