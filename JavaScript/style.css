@@ -1,0 +1,175 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+ nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 20px;
+      position: sticky;
+     top: 5px;
+     background-color: rgba(74, 71, 71, 0.158);
+    
+}
+nav a{
+    text-decoration: none;
+}
+#card
+{
+    margin: 20px 20px;
+    border: purple 6px solid;
+    height: 350px;
+    width: 300px;
+  
+}
+#card img{
+    border: rgb(43, 21, 43) 6px solid;
+    border-radius: 50px;
+    margin: 10px 30px;
+}
+#card .title
+{
+     text-align: center;
+}
+#card .title p{
+    padding: 5px 0;
+}
+#card .title button
+{
+    padding: 3px 2px;
+    border-radius: 50px;
+    color: white;
+    background-color: black;
+    transition: transform 0.8s;
+    
+}
+#card .title button:hover{
+    color: rgb(0, 0, 0);
+    background-color: rgba(234, 217, 217, 0.074);
+    font-weight: bold;
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .home
+{
+ height: 200px;
+ width: 200px;
+ background-color: rgb(212, 172, 172);
+ position: static;
+ left: 100px;
+
+}
+.apps
+{
+    height: 200px;
+    width: 200px;
+    background-color: blueviolet;
+     position: relative;
+     top: 20px ;
+     left: 30px;
+}
+
+#hhi
+{
+    height: 300px;
+    width: 300px;
+    background-color: rgb(23, 213, 20);
+    position: sticky;
+    top: 10px;
+    left: 200px;
+}
+#hi
+{
+    height: 300px;
+    width: 300px;
+    background-color: rgb(189, 26, 184);
+}
+#ho
+{
+    height: 300px;
+    width: 300px;
+    background-color: rgb(92, 47, 5);
+} */
