@@ -59,16 +59,18 @@ let s = 'hii'
 
 //printing 1-10 using for and while loops
 
-for (let a = 1; a <= 10; a++) {
-    console.log(a);
-}
+// for (let a = 1; a <= 10; a++) {
+//     console.log(a);
+// }
 
 
-let num = 1
-while (num <= 10) {
-    console.log(num);
-    num++
-}
+// let num = 1
+// while (num <= 10) {
+//     console.log(num);
+//     num++
+// }
+
+
 
 // do-while loop that print no from 5-1
 
@@ -127,25 +129,201 @@ let array = [1, 2, 4, 'apple', false, 5]
 
 
 
-function sum(a,b)
+// function sum(a,b)
+// {
+//     return a+b
+// }
+// console.log(sum(45,4));
+
+
+
+
+// let sum2= ()=>
+// {
+//     console.log("pritning the sum")
+// }
+// sum2();
+
+
+
+
+// let sum1= function()
+// {
+//  console.log("priting the anonynomus function")
+// }
+// sum1();
+
+
+
+
+ //forEach loop use for iterate each element in an array and it work as a higher oder and call back function use in forEach . We can only iterate the vlaue in forEach loop can't return.
+let mark=[90,56,78,33]
+// mark.forEach((val)=>console.log(val))
+let passMark= mark.forEach((value, i)=>
 {
-    return a+b
+    // console.log(value)
+    if(value>60)
+    {
+        // console.log(value)
+        // console.log(i)
+    
+    }
+})
+// console.log(passMark)
+
+
+
+
+// map : arrays inbuilt method where we can iterate to all the index and create a new array and return the value also.
+let filterMark=mark.map((val, i)=>{
+    // console.log(val)
+    // console.log(i)
+    // return val+12                 it can't return the >,< it takes it as true and false
+    // if(val>80)
+    // {
+    //     return val
+    // }
+})
+    // console.log(filterMark)
+
+
+
+    //filter : filter method return the value without any undefine value msg
+    // let pass = mark.filter((marks)=>
+    // {
+    //     return marks>45
+    // })
+    // console.log(pass)
+
+
+
+
+    //reduce : it can return the final value
+    // let total = mark.reduce((sum, item)=> sum+=item, 0)
+    // console.log(total)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//1.Create an array of colors and use a for-of loop to print each color.
+
+let arrOfColor=["pink", "yellow", "brown", "orange", "purple", "red", "white", "black"]
+arrOfColor.forEach((color, index)=>{
+//  console.log(color)
+//  console.log(index)
+})
+
+//2. Create an object with key-value pairs like {name: "Alice", age: 25} and use a for-in loop to log each key and value.
+let object={
+    name:"anchal",
+    rollno:8,
+    age:20
 }
-console.log(sum(45,4));
+for(let key in object){
+    // console.log(key + "=>")
+    // console.log(object[key])
+    // console.log(object)
+}
+
+
+// Use forEach() to iterate over an array of numbers and log the square of each number.
+let number=[1,3,4,5,6,7]
+ number.forEach((square)=>{
+    // console.log(square*square) 
+})
 
 
 
 
-let sum= ()=>
+
+//4. Create an array of marks and use forEach() to print "Pass" or "Fail" for each mark (pass >= 35).
+let marks=[57,23,67,78,90.34,80]
+ let qualify=marks.forEach((passmark)=>{
+    if(passmark>35)
+    {
+    // console.log( "pass")
+    return "pass"
+    }
+    else{
+    // console.log( "fail")
+    return "fail"
+    }
+})
+console.log(qualify)
+
+
+
+
+
+
+
+
+
+
+
+
+
+//5. Use length, toUpperCase() and toLowerCase() on the string "JavaScript" and log the results.
+let stri="javascript"
+console.log(stri.length)
+console.log(stri.toUpperCase())
+console.log(stri.toLocaleLowerCase())
+
+
+
+//6. Use slice() to extract "Script" from "JavaScript".
+console.log(stri.slice(4, 10))
+
+
+//7. Replace "apples" with "mangoes" in the string "I like apples" using replace().
+let string="I like apples"
+console.log(string.replace("apple", "mango"))
+
+//8. Use split() to turn the string "apple,banana,grapes" into an array.
+let strin="apple, banana, graphs"
+console.log(strin.split(","))
+
+//9. Create a normal function called greet that logs "Hello, World!".
+function greet()
 {
-    console.log("pritning the sum")
+    console.log("Hello, World!")
 }
-sum();
+greet()
 
-
-
-let sum1= function()
-{
- console.log("priting the anonynomus function")
+//10. Write an arrow function that returns the square of a number.
+let fun=(a)=>{
+    return a*a
 }
-sum1()
+console.log(fun(4));
+
+
+//11. Create an anonymous function and assign it to a variable that logs "I am anonymous".
+const anony=function (a){
+ return a
+}
+ console.log(anony("I an am an Anomymous function"))
+
+
+ //12. Create a function that takes a name as an argument and returns "Hello, [name]". Use both normal and arrow function versions.
+function normal (name){
+ return name
+ }
+//  console.log(`hello, ${"anchal"}`)
+console.log("hello, " + "anchal")
+
+
+let arrowname=(anme)=>{
+    return anme
+}
+console.log(arrowname("hello " + "lisha"))
