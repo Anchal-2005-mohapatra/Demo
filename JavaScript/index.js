@@ -110,3 +110,42 @@ let array = [1, 2, 4, 'apple', false, 5]
 
 //  arr.splice(3,2)
 //  console.log(arr);
+
+
+// function fun()
+// {
+//  console.log("normal function"); 
+// }
+// fun()
+
+
+
+// function addition(a = 0, b = 0) {
+//     return a + b
+// }
+//  console.log(addition(10, 30));
+
+
+
+function sum(a,b)
+{
+    return a+b
+}
+console.log(sum(45,4));
+
+
+
+
+let sum= ()=>
+{
+    console.log("pritning the sum")
+}
+sum();
+
+
+
+let sum1= function()
+{
+ console.log("priting the anonynomus function")
+}
+sum1()

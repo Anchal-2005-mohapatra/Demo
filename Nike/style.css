@@ -4,6 +4,8 @@
 }
 
 .header {
+    position: sticky;
+    top: 10px;
     display: flex;
     justify-content: space-between;
     padding: 10px 50px;
@@ -203,10 +205,11 @@ button:hover {
     display: flex;
     gap: 20px;
     height: 300px;
+    overflow-x: scroll;
 
 }
 
-.shop {
+#shop {
     padding: 30px 50px;
 }
 
@@ -219,7 +222,7 @@ button:hover {
 .shoes {
     display: flex;
     gap: 10px;
-
+overflow: scroll;
 
 
 }
@@ -252,6 +255,7 @@ button:hover {
     gap: 20px;
     padding: 10px 50px;
     height: 600px;
+    overflow: scroll;
 }
 
 .images .run {
@@ -320,6 +324,7 @@ image .ball {
 .final {
     display: flex;
     gap: 40px;
+    padding: 0 30px;
    
 
 }
