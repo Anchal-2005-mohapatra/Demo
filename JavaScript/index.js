@@ -156,81 +156,22 @@ let array = [1, 2, 4, 'apple', false, 5]
 
 
 
- //forEach loop use for iterate each element in an array and it work as a higher oder and call back function use in forEach . We can only iterate the vlaue in forEach loop can't return.
-let mark=[90,56,78,33]
-// mark.forEach((val)=>console.log(val))
-let passMark= mark.forEach((value, i)=>
-{
-    // console.log(value)
-    if(value>60)
-    {
-        // console.log(value)
-        // console.log(i)
-    
-    }
-})
-// console.log(passMark)
-
-
-
-
-// map : arrays inbuilt method where we can iterate to all the index and create a new array and return the value also.
-let filterMark=mark.map((val, i)=>{
-    // console.log(val)
-    // console.log(i)
-    // return val+12                 it can't return the >,< it takes it as true and false
-    // if(val>80)
-    // {
-    //     return val
-    // }
-})
-    // console.log(filterMark)
-
-
-
-    //filter : filter method return the value without any undefine value msg
-    // let pass = mark.filter((marks)=>
-    // {
-    //     return marks>45
-    // })
-    // console.log(pass)
-
-
-
-
-    //reduce : it can return the final value
-    // let total = mark.reduce((sum, item)=> sum+=item, 0)
-    // console.log(total)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 //1.Create an array of colors and use a for-of loop to print each color.
 
-let arrOfColor=["pink", "yellow", "brown", "orange", "purple", "red", "white", "black"]
-arrOfColor.forEach((color, index)=>{
-//  console.log(color)
-//  console.log(index)
+let arrOfColor = ["pink", "yellow", "brown", "orange", "purple", "red", "white", "black"]
+arrOfColor.forEach((color, index) => {
+    //  console.log(color)
+    //  console.log(index)
 })
 
 //2. Create an object with key-value pairs like {name: "Alice", age: 25} and use a for-in loop to log each key and value.
-let object={
-    name:"anchal",
-    rollno:8,
-    age:20
+let object = {
+    name: "anchal",
+    rollno: 8,
+    age: 20
 }
-for(let key in object){
+for (let key in object) {
     // console.log(key + "=>")
     // console.log(object[key])
     // console.log(object)
@@ -238,8 +179,8 @@ for(let key in object){
 
 
 // Use forEach() to iterate over an array of numbers and log the square of each number.
-let number=[1,3,4,5,6,7]
- number.forEach((square)=>{
+let number = [1, 3, 4, 5, 6, 7]
+number.forEach((square) => {
     // console.log(square*square) 
 })
 
@@ -248,82 +189,158 @@ let number=[1,3,4,5,6,7]
 
 
 //4. Create an array of marks and use forEach() to print "Pass" or "Fail" for each mark (pass >= 35).
-let marks=[57,23,67,78,90.34,80]
- let qualify=marks.forEach((passmark)=>{
-    if(passmark>35)
-    {
-    // console.log( "pass")
-    return "pass"
+let marks = [57, 23, 67, 78, 90.34, 80]
+let qualify = marks.forEach((passmark) => {
+    if (passmark > 35) {
+        // console.log( "pass")
+        return "pass"
     }
-    else{
-    // console.log( "fail")
-    return "fail"
+    else {
+        // console.log( "fail")
+        return "fail"
     }
 })
-console.log(qualify)
-
-
-
-
-
-
-
-
+// console.log(qualify)
 
 
 
 
 
 //5. Use length, toUpperCase() and toLowerCase() on the string "JavaScript" and log the results.
-let stri="javascript"
-console.log(stri.length)
-console.log(stri.toUpperCase())
-console.log(stri.toLocaleLowerCase())
+let stri = "javascript"
+// console.log(stri.length)
+// console.log(stri.toUpperCase())
+// console.log(stri.toLocaleLowerCase())
 
 
 
 //6. Use slice() to extract "Script" from "JavaScript".
-console.log(stri.slice(4, 10))
+// console.log(stri.slice(4, 10))
 
 
 //7. Replace "apples" with "mangoes" in the string "I like apples" using replace().
-let string="I like apples"
-console.log(string.replace("apple", "mango"))
+let string = "I like apples"
+// console.log(string.replace("apple", "mango"))
 
 //8. Use split() to turn the string "apple,banana,grapes" into an array.
-let strin="apple, banana, graphs"
-console.log(strin.split(","))
+let strin = "apple, banana, graphs"
+// console.log(strin.split(","))
 
 //9. Create a normal function called greet that logs "Hello, World!".
-function greet()
-{
-    console.log("Hello, World!")
+function greet() {
+    // console.log("Hello, World!")
 }
 greet()
 
 //10. Write an arrow function that returns the square of a number.
-let fun=(a)=>{
-    return a*a
+let fun = (a) => {
+    return a * a
 }
-console.log(fun(4));
+// console.log(fun(4));
 
 
 //11. Create an anonymous function and assign it to a variable that logs "I am anonymous".
-const anony=function (a){
- return a
+const anony = function (a) {
+    return a
 }
- console.log(anony("I an am an Anomymous function"))
+//  console.log(anony("I an am an Anomymous function"))
 
 
- //12. Create a function that takes a name as an argument and returns "Hello, [name]". Use both normal and arrow function versions.
-function normal (name){
- return name
- }
+//12. Create a function that takes a name as an argument and returns "Hello, [name]". Use both normal and arrow function versions.
+function normal(name) {
+    return name
+}
 //  console.log(`hello, ${"anchal"}`)
-console.log("hello, " + "anchal")
+// console.log("hello, " + "anchal")
 
 
-let arrowname=(anme)=>{
+let arrowname = (anme) => {
     return anme
 }
-console.log(arrowname("hello " + "lisha"))
+// console.log(arrowname("hello " + "lisha"))
+
+
+
+
+
+//forEach loop use for iterate each element in an array and it work as a higher oder and call back function use in forEach . We can only iterate the vlaue in forEach loop can't return.
+let mark = [90, 56, 78, 33]
+// mark.forEach((val)=>console.log(val))
+let passMark = mark.forEach((value, i) => {
+    // console.log(value)
+    if (value > 60) {
+        // console.log(value)
+        // console.log(i)
+
+    }
+})
+// console.log(passMark)
+
+
+
+
+// map : arrays inbuilt method where we can iterate to all the index and create a new array and return the value also.
+let filterMark = mark.map((val, i) => {
+    // console.log(val)
+    // console.log(i)
+    // return val+12                 it can't return the >,< it takes it as true and false
+    // if(val>80)
+    // {
+    //     return val
+    // }
+})
+// console.log(filterMark)
+
+
+
+//filter : filter method return the value without any undefine value msg
+// let pass = mark.filter((marks)=>
+// {
+//     return marks>45
+// })
+// console.log(pass)
+
+
+
+
+//reduce : it can return the final value
+// let total = mark.reduce((sum, item)=> sum+=item, 0)
+// console.log(total)
+
+
+
+
+
+
+
+// DOM :(Document Object Model)  it is a programming interface which helps to handle/manupulate the Html/Xml document and it represt as tree style structre each element is represent as NodeList.
+//getElementById()
+let idSelector = document.getElementById('paraid')
+console.log(idSelector);
+
+
+
+//getElementsByClassName() : return in array 
+let classSelector = document.getElementsByClassName("para")
+console.log(classSelector)
+
+
+//getElementsByTagName() : return in array
+let tagName = document.getElementsByTagName("p")
+console.log(tagName)
+
+//getElementsByName() : return in array
+let name = document.getElementsByName('find1')
+console.log(name)
+
+
+//querySelector() : it only return the 1st ocurrance of the document wheather there is a id selector or a class selector 
+let querySelector = document.querySelector(".para")
+console.log(querySelector)
+
+
+//querySelectorAll()
+let allSelector = document.querySelectorAll('#paraid')
+console.log(allSelector)
+
+
