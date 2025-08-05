@@ -316,31 +316,75 @@ let filterMark = mark.map((val, i) => {
 // DOM :(Document Object Model)  it is a programming interface which helps to handle/manupulate the Html/Xml document and it represt as tree style structre each element is represent as NodeList.
 //getElementById()
 let idSelector = document.getElementById('paraid')
-console.log(idSelector);
+// console.log(idSelector);
 
 
 
 //getElementsByClassName() : return in array 
 let classSelector = document.getElementsByClassName("para")
-console.log(classSelector)
+// console.log(classSelector);
 
 
 //getElementsByTagName() : return in array
 let tagName = document.getElementsByTagName("p")
-console.log(tagName)
+// console.log(tagName);
 
 //getElementsByName() : return in array
 let name = document.getElementsByName('find1')
-console.log(name)
+// console.log(name);
 
 
 //querySelector() : it only return the 1st ocurrance of the document wheather there is a id selector or a class selector 
 let querySelector = document.querySelector(".para")
-console.log(querySelector)
+// console.log(querySelector);
 
 
 //querySelectorAll()
 let allSelector = document.querySelectorAll('#paraid')
-console.log(allSelector)
+// console.log(allSelector);
 
 
+
+
+
+// getAttribute :
+let imgdetails = document.getElementById("images")
+// let getvalue = imgdetails.getAttribute("hright")
+// console.log(getvalue);
+
+
+//setAttribute
+//  imgdetails.setAttribute("height", "200px")
+// imgdetails.setAttribute("class", "img img1")
+// console.log(imgdetails);
+
+
+
+//Targeting a element and change it's properties :
+const paragraph = document.querySelector("#paraid")
+console.log(paragraph);
+
+paragraph.style.color="pink"
+paragraph.style.fontSize="40px"
+paragraph.style.backgroundColor="black"
+paragraph.innerText="I had already change the text"
+
+
+//Creating a new Element :
+const newElement = document.createElement("h1")
+// console.log(newElement);
+newElement.innerText="I am creating a new Element"
+
+//Storing the new newElement :
+let store = document.querySelector(".box")
+//append insert the element next to the existing data
+// store.append(newElement);
+
+//prepend: it store before the existing data
+// store.prepend(newElement);
+
+//after : it will store at bottom part
+// store.after(newElement);
+
+//before : it will store the newElement at the top
+store.before(newElement);

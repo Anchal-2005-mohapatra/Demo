@@ -23,6 +23,13 @@ nav a{
     width: 300px;
   
 }
+.box
+{
+    height: 300px;
+    width: 300px;
+    background-color: gray;
+    color: black;
+}
 #card img{
     border: rgb(43, 21, 43) 6px solid;
     border-radius: 50px;
