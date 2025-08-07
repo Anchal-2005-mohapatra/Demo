@@ -362,7 +362,7 @@ let imgdetails = document.getElementById("images")
 
 //Targeting a element and change it's properties :
 const paragraph = document.querySelector("#paraid")
-console.log(paragraph);
+// console.log(paragraph);
 
 paragraph.style.color="pink"
 paragraph.style.fontSize="40px"
@@ -388,3 +388,31 @@ let store = document.querySelector(".box")
 
 //before : it will store the newElement at the top
 store.before(newElement);
+
+
+
+
+// const bg = document.querySelector("#box1")
+// const btn = document.querySelector("#btn")
+// btn.onclick = ()=>
+//     {
+//         bg.style.backgroundColor=bg.style.backgroundColor === "black" ? "white" : "black" 
+        
+//     }
+
+
+    let tar = document.querySelector("field")
+    let btn = document.querySelector("#button")
+    btn.onclick=(e)=>
+    {
+        console.log(e)
+        console.log(e.target)
+        console.log(e.type)
+    }
+
+    tar.onChange =(e)=>
+    {
+        console.log(e)
+        console.log(e.target.value);
+        
+    }

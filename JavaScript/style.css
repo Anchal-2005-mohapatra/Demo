@@ -15,6 +15,13 @@
 nav a{
     text-decoration: none;
 }
+#box1
+{
+    background-color:black;
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+}
 #card
 {
     margin: 20px 20px;
