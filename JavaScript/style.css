@@ -78,9 +78,68 @@ nav a{
     
 }
 
+.para1
+{
+    /* color: red; */
+    background: linear-gradient(to right, pink, black, purple, blue,yellow);
+     background-clip: text;
+    color: transparent;
+    font-weight: bold;
+}
+.para2
+{
+    color: white;
+    background: linear-gradient(to right, black, red, orangered);
+}
+.para3
+{
+    font-size: 40px;
+}
+.style
+{
+    height: 200px;
+    width: 200px;
+    background:linear-gradient(to bottom, pink, white);
+    padding: 10px;
+    margin: 30px;
+}
+.gridlayout #first
+{
+  height: 200px;
+  background-color: brown;
+}
+.gridlayout #second
+{
+    height: 200px;
+    background-color: blueviolet;
+}
+.gridlayout
+{
+ display: grid;
+ grid-template-columns: repeat(2,1fr);
+}
 
-
-
+.transition
+{
+    height: 300px;
+    width: 300px;
+    background-color: rgb(241, 241, 11);
+    margin: 30px;
+    box-shadow: 1px 1px 10px black;
+    border-radius: 20px;
+    transition: transform 0.5s;
+}
+.transition:hover{
+ transform: translateX(20%);
+ /* transform: scale(1.1); */
+}
+@media screen and (max-width:450px){
+    .gridlayout
+    {
+        display: grid;
+        grid-template-columns: repeat(1,1fr)
+    }
+}
 
 
 

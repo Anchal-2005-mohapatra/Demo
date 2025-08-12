@@ -401,18 +401,203 @@ store.before(newElement);
 //     }
 
 
-    let tar = document.querySelector("field")
+    // let tar = document.querySelector("field")
     let btn = document.querySelector("#button")
-    btn.onclick=(e)=>
+    // btn.onclick=(e)=>
+    // {
+    //     console.log(e)
+    //     console.log(e.target)
+    //     console.log(e.type)
+    // }
+
+    // tar.onChange =(e)=>
+    // {
+    //     console.log(e)
+    //     console.log(e.target.value);
+        
+    // }
+
+    const eventHandle = document.querySelector("#field")
+    btn.onmouseenter = (e) =>
     {
-        console.log(e)
-        console.log(e.target)
-        console.log(e.type)
+        // console.log(e)
+        // console.log(e.target.value)
     }
 
-    tar.onChange =(e)=>
-    {
-        console.log(e)
-        console.log(e.target.value);
-        
+    // const take= prompt("hlo")
+    // console.log(take)
+
+    // alert("alert message")
+
+    let arr1=[2,3,4,5,6]
+    // for( let i=0;i<arr1.length;i++)
+    // {
+    //     console.log(arr1[i])
+    // }
+
+
+    // for(let e of arr1 )
+    // {
+    //     console.log(e)
+    // }
+
+    let obje = {
+        name : "one",
+        no:1,
+        roll:67
     }
+    for(let k in obje)
+    {
+        // console.log(k);
+        // console.log(obje[k]);
+    }
+
+    let mapp = [1, 2, 3, 4, 5]
+   let result = mapp.map((item, i) =>
+   {
+    // console.log(item)
+    // console.log(i)
+    
+            // console.log(item*item);
+   }
+)
+   
+let extract = [3,12,8,25,7]
+let filter = extract.filter((item)=>
+{
+    return item>10
+})
+// console.log(filter)
+
+let sum = extract.reduce((summing, item)=>
+summing+=item,0)
+// console.log(sum)
+
+
+
+let mul =(no1, no2)=>
+{
+    // console.log(no1*no2)
+}
+mul(20, 10)
+
+
+
+//addEventListener() = it is inbulit function which is used to handle the events .
+let h1 = document.querySelector("h1")
+let btns= document.querySelector("#button")
+h1.addEventListener("mouseenter", ()=>{console.log("mouse was enter"); h1.style.color="red"})
+
+function fun1()
+{
+    h1.style.fontSize="20px"
+    console.log("clicked");
+    h1.style.color="purple"
+} 
+// btns.addEventListener("click", fun1)
+// btns.removeEventListener("click", fun1)
+
+
+// setTimeout() = it is a inbuilt fuction of js used to execute the code after some time interval .
+// setTimeout(()=>{console.log("timeout")}, 4000)
+
+// setTimeout(()=>{btns.removeEventListener("click", fun1)}, 5000)
+
+
+
+
+
+
+//prototype : Inbuilt feature in js by using this we can create object and cerate a child object and inherit the property from parent object.
+let parent ={
+    name:"father",
+    age:47,
+    address:"garhromita"
+}
+
+let ramparent =
+{
+    _proto_ : parent,
+    name:"ram",
+    gender:"male"   
+}
+// console.log(ramparent)
+// console.log(parent.name)
+// console.log(ramparent.gender)
+
+let sita = Object.create(parent)
+// console.log(sita.name)
+sita={
+    gender : "female"
+}
+// console.log(sita.)
+
+
+
+
+
+
+//class is a template which is used to create the object
+// you have to crate the object of a class to access it
+class human {
+    constructor(name, age) {
+        this.name=name
+        this.age=age
+    }
+    check()
+    {
+        console.log(`my name is ${this.name}, and my age is ${this.age}`)
+    }
+
+}
+const human1 = new human("anchal", 20)
+// console.log(human1)
+// human1.check()
+
+class human2 extends human{
+    check()
+    {
+         console.log(`i am ${this.name},i am ${this.age}`)
+    }
+
+}
+const person2 = new human2("michal", 17)
+// console.log(person2)
+// person2.check()
+
+
+
+
+
+
+
+// callbackhell : it is nested call back function and it have the asynchrous flow of excution
+function getUser(userId, callback) {
+    setTimeout(() => {
+        console.log("User data fetched");
+        callback({ id: userId, name: "John Doe" });
+    }, 1000);
+}
+
+function getUserPosts(userId, callback) {
+    setTimeout(() => {
+        console.log("User posts fetched");
+        callback([{ postId: 1, title: "Post 1" }, { postId: 2, title: "Post 2" }]);
+    }, 1000);
+}
+
+function getPostComments(postId, callback) {
+    setTimeout(() => {
+        console.log("Comments for post fetched");
+        callback([{ commentId: 101, text: "Nice post!" }]);
+    }, 1000);
+}
+
+// Nested Callbacks (Callback Hell)
+getUser(1, (user) => {
+    getUserPosts(user.id, (posts) => {
+        getPostComments(posts[0].postId, (comments) => {
+            console.log("Comments: ", comments);
+        });
+    });
+});
