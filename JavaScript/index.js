@@ -594,10 +594,134 @@ function getPostComments(postId, callback) {
 }
 
 // Nested Callbacks (Callback Hell)
-getUser(1, (user) => {
-    getUserPosts(user.id, (posts) => {
-        getPostComments(posts[0].postId, (comments) => {
-            console.log("Comments: ", comments);
-        });
+// getUser(1, (user) => {
+//     getUserPosts(user.id, (posts) => {
+//         getPostComments(posts[0].postId, (comments) => {
+//             console.log("Comments: ", comments);
+//         });
+//     });
+// });
+
+
+let createObj = {
+    name : "anchal",
+    class :"b.tech",
+    rollNo : 22014304008
+}
+// console.log(createObj)
+createObj.address = "kdp"
+// console.log(createObj)
+delete createObj.name
+// console.log(createObj)
+
+
+// Hoisting : It is a process where we can access the variable and function above the scope.
+// console.log(an) 
+let an = 12
+// console.log(an)
+
+
+//we can access the var keyword variable as hoisting
+// console.log(anc)
+var anc = 12
+// console.log(anc)
+
+
+ 
+//we can acess hoisting procsess on normal function
+// func(4,6)
+function func (a,b)
+{
+    console.group(a+b)
+}
+// func(4,6)
+
+
+// sort()
+let newArray =[1,4,67,34,89,9]
+newArray.sort((a,b)=>a-b)
+// console.log(newArray)       asending order
+
+newArray.sort((a,b)=>b-a)
+//  console.log(newArray) 
+
+
+
+
+//promise : promises is used to handle the request and response in between client and server and it also help to handle the callback hell
+fetch("https://jsonplaceholder.typicode.com/posts")
+.then((resolve)=>
+{
+    // console.log(resolve)
+    resolve.json().then((final)=>{
+        // console.log(final)
+    })
+    .catch((error)=>{
+        // console.log("error")
+    })
+})
+    .catch((error)=>{
+        // console.log("error")
+    })
+
+    const findData = async()=>{
+    let responseObj = await fetch ("https://api.escuelajs.co/api/v1/products")
+    console.log(responseObj);
+    const data = await responseObj.json()
+    console.log(data);
+}
+findData()
+
+let targetDiv = document.querySelector(".parentcontainer")
+async function loadProducts() {
+  try {
+    const response = await fetch("https://api.escuelajs.co/api/v1/products");
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+
+    const products = await response.json();
+
+    products.forEach(product => {
+      const card = document.createElement('div');
+      card.className = 'product-card';
+      card.innerHTML = `
+        <h2>${product.title}</h2>
+        <p><strong>Price:</strong> $${product.price}</p>
+        <img src="${product.images?.[0] || ''}" alt="${product.title}" width="150" />
+      `;
+      targetDiv.appendChild(card);
     });
-});
+  } catch (error) {
+   targetDiv.textContent = `Error: ${error.message}`;
+    console.error('Fetch error:', error);
+  }
+}
+
+// Load on page start
+// loadProducts();
+
+
+
+const find = document.querySelector(".parentcontainer")
+let functionFind = async()=>
+{
+   let object = await fetch("https://api.escuelajs.co/api/v1/products")
+   let resultIs = await object.json()
+   resultIs.map((output)=>{
+    const productName = document.createElement("h1")
+     const description = document.createElement("p")
+ const price = document.createElement("p")
+ const images = document.createElement("img")
+
+
+productName .textContent = output.title
+description.innerText= output.description
+price.innerText="price : $" + output.price
+images.setAttribute("img", images[0])
+
+   find.append(productName,description, price,images)
+   });
+ 
+}
+functionFind()

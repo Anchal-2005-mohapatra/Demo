@@ -15,6 +15,11 @@
 nav a{
     text-decoration: none;
 }
+/* .parentcontainer
+{
+    display: flex;
+    gap: 20px;
+} */
 #box1
 {
     background-color:black;
