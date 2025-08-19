@@ -1,0 +1,61 @@
+Multipage application :
+=> It will have multiple pages or multiple HTML files.
+=> If we try to navigate from one page to another page every time it is going to refresh and each time DOM tree will be recreated . 
+=> Multipage applications are slower as compare to single page applications .
+=> We can create multiple application by using only HTML CSS and JAVASCRIPT
+
+single Page application : 
+=> It an application where it will be having single page or single HTML file .
+=> If we try to navigate from one page to another page it will not gonna refesh because we will be staying in the same HTML file, but we are moving from one component to another component this make application faster .
+=> To create a single page application we need some advance concepet like angular, jQuery, react etc .
+
+
+ReactJS :
+=> It is a javaScript library (collection of predefine methods and properties), which is used to build UI(User Interface).
+
+Feature of ReactJS :
+=> Single page application.(Ex: Whatsapp, FaceBook)
+=> Virtual DOM :
+    -> It is a blue print of real DOM  .
+    -> Whenever we run react application for the first time DOM structure is going to get created parallaly a copy of real DOM also going to get generated, this is called virtual DOM .
+=> Component Base Architecture : 
+   -> React follows CBA because we can reuse ,better code maintainability . 
+   -> Web page will be devided into small parts and that small part is calles Component .
+
+
+=> Rules to  create a Component :
+  -> First letter should be capital .
+  -> Component name should be written in PascalCase .
+  -> Component extension should be .js or .jsx 
+  -> Ex : App.jsx , Home.js
+
+=> What is JSX : JSX is the combination of javaScript and XML(Extensible markup language )
+
+Difference between HTML and XML 
+
+1.  =>HTML : 
+        ->In HTML we use an Attribute "class" 
+    =>XML :
+        -> In XML we will be using an Attribute "className"
+2.  =>HTML : 
+        -> All event in HTML we use lowercase "onclick" , "onmouseclick"
+    =>XML : 
+        -> In XML we use event in camelCase "onClick", "onMouseClicl"
+
+3.  =>HTML : 
+        -> we can write multiple element 
+        -> <h1>Hello <h1>
+        -><h2> hii<h2>
+         -><h3>Hello <h3>
+        -><h4> hii<h4>
+        -> <h5>Hello <h5>
+        -><h6> hii<h6>
+
+    =>XML :
+       -> in XML we have to wrap all the elements into a parent Container  
+       <div><h1>Hello <h1>
+        <h2> hii<h2>
+        <h3>Hello <h3>
+        <h4> hii<h4>
+         <h5>Hello <h5>
+        <h6> hii<h6> </div>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zomato</title>
+    <link rel="stylesheet" href="./zomato.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav>
+        <div id="navbar">
+            <ul>
+                <li><a href="">Zomato</a></li>
+            </ul>
+        </div>
+
+        <div class="place">
+            <button>
+                <i class="fa-solid fa-location-dot"></i>
+                <select name="" id="select">
+                    <option value="">Bhubaneswar</option>
+                    <option value="">Cuttack</option>
+                    <option value="">Bhadraak</option>
+                </select>
+                <div class="div"></div>
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Search for restaurant, cuisine or a dish ">
+            </button>
+
+        </div>
+        <div class="login">
+
+            <button id="loginBtn"> <i class="fa-solid fa-user"></i>Login</button>
+        </div>
+        <div class="cart">
+            <button id="cartBtn"> <i class="fa-solid fa-cart-shopping"></i>Cart <span id="cartCount">()</span></button>
+        </div>
+
+    </nav>
+
+    <section id="firstSection">
+        <h1>What's on your mind?</h1>
+       <div class="images">
+        <img src="./images/cakes.avif" alt="cake">
+        <img src="./images/dosa.avif" alt="dosa">
+        <img src="./images/idli.avif" alt="idli">
+        <img src="images/paratha.avif" alt="paratha" />
+        <img src="images/poori.avif" alt="poori" />
+        <img src="images/vada.avif" alt="vada" />
+       </div> 
+    </section>
+    <section id="secondSection">
+        <h1>All foods</h1>
+        <div class="foodlist" id="food">
+
+        </div>
+    </section>
+    <footer>
+        ©2025 Food-Hub.All rights reserved.
+    </footer>
+    <script src="./zomato.js"></script>
+</body>
+
+</html>
