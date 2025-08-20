@@ -59,3 +59,70 @@ Difference between HTML and XML
         <h4> hii<h4>
          <h5>Hello <h5>
         <h6> hii<h6> </div>
+
+
+
+=> Folder Structure of ReactJS : After sucessfully installation of react.js we will getting some default files and folders .
+
+1.Node Modules : It is a folder where all the predefine codes and dependencies of react.js will be present 
+we don't need to change anything in this folder 
+2.Public : this folder contains the main structure of the webpage .
+the only imporatant file we have to maintain index.html.
+3. src :  it is a source folder where we are going to write our codes 
+The two important files we have to maintain is index.js or main.jsx and app.js or app.jsx.
+Index.js : It is consider as root file of react.js which is used to create a connection between App.jsx  and HTML document .
+App.jsx : It is consinder as parent componet of react.js 
+4. Package.json and Package-lock.json : These are the two files where it is consider as directory of react folder 
+It will give all the impormation about libraries present in the project.
+
+
+React-project Setup :
+1. Using create-react-app :
+- npx create-react-app <projectName>
+- cd <projectName>
+- npm start / npm run start 
+
+2. Using vite
+ - npm create vite@latest <projectName>
+ - cd <projectName>
+ - npm run dev 
+
+ -After installation of react-project, we will be having some default folder and files .Now we have to maintain two important files in src folder index.js/ main.jsx and App.jsx .
+
+
+=> index.js / main.js:
+import React from "react";
+import {createRoot} from "react-dom/client"
+import App from "./App"
+const path = document.querySelector("#root");
+createRoot(path).render(<App />)
+
+=>App.jsx :
+import React from "react"
+const App=()=>
+{
+    return(
+        <div>
+        <h1>App</h1>
+        </div>
+    );
+};
+export default App;
+
+
+- After installation setup we have to create a new folder name componet in src folder 
+- After creating componet folder will create all our project componet inside components folder 
+- App componet is called as parent component and all the  componets which present inside component folder are called as child componet (ex: NavBar.jsx , Componet.jsx)
+
+
+=> NavBar.jsx :
+import React from "react";
+const NavBar = ()=>
+{
+    return (
+        <div>
+            <h1>NavBar</h1>
+        </div>
+    );
+};
+export default NavBar;
