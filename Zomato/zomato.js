@@ -43,7 +43,7 @@ function displayFood(items) {
 food.addEventListener("click", (e) => {
     if (e.target.tagName === "BUTTON") {
         const index = parseInt(e.target.dataset.index);
-        cart.push(food[index]);
+        cart.push(foods[index]);
         updateCartCount();
     }
 });
@@ -60,6 +60,10 @@ login.addEventListener("click", () => {
 
 // Cart Checkout
 cartBtn.addEventListener("click", () => {
+    console.log("Clicked");
+    console.log(cart);
+    
+    
     if (cart.length === 0) {
         alert("Cart is empty.");
         return;

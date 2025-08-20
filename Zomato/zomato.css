@@ -27,11 +27,10 @@ nav #navbar ul a {
     font-style: bold;
 
 }
-
 .place button {
-
     padding: 10px 30px;
     display: flex;
+    align-items: center;
     gap: 10px;
     outline: none;
     border: 1px solid rgb(232, 231, 228);
@@ -40,20 +39,15 @@ nav #navbar ul a {
 
 }
 
-.place button i {
-    padding-top: 6px;
-}
-
 .place button #select {
     padding: 5px 5px;
     border: none;
     color: gray
 }
 
-.div::after {
-    content: "|";
-    padding: 20px 0px;
-    color: gray;
+.div{
+    border-right: 2px solid gray;
+    height: 15px;
 }
 
 .place button input {
@@ -102,7 +96,7 @@ nav #navbar ul a {
 }
 
 #firstSection h1:hover {
-    background: linear-gradient(to right, rgb(23, 1, 4), rgb(234, 10, 25), rgb(23, 240, 27));
+    background: linear-gradient(to right, rgb(23, 1, 4), rgb(234, 10, 25), pink);
     background-clip: text;
     color: transparent;
 }
