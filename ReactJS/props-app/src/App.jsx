@@ -37,10 +37,11 @@
 import React from "react";
 import Product from "./Product";
 import DeStructure from "./DeStructure";
+import AllStudent from "./AllStudent";
 const App=()=>
 {
    return(
-    <div><h1>app</h1>
+    <div>
     {/* <Product  Name="Mobile"
      price ="385"
      rating="5.4"
@@ -60,7 +61,7 @@ const App=()=>
 
 
        
-        <DeStructure  Name="Mobile"
+        {/* <DeStructure  Name="Mobile"
      price ="385"
      rating="5.4"
      Description ="you have to know about the product" />
@@ -73,9 +74,11 @@ const App=()=>
         price ="342"
         rating ="3.4"
         Description="watch is usefull for timing in your life"
-        />
+        /> */}
+
+        <AllStudent  name="Anchal" rollno="12" Class="12th" address= "Bhubaneswar" />
       </div>
   
-   )
-}
+   );
+};
 export default App;

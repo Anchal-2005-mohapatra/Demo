@@ -1,0 +1,7 @@
+@import "tailwindcss";
+h1{
+    color: maroon;
+    background-color: rgba(192, 150, 231, 0.43);
+    text-align: center;
+    background: linear-gradient(to right,rgb(226, 118, 136),rgb(216, 88, 216));
+}
