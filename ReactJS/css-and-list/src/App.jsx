@@ -44,7 +44,7 @@ const App=()=>
 {
  return(<div>
     Css and list
-    <Product/>
+    <Product name="bird" price="300" rating="4.3" />
     <InlineCss />
     <StyleObject/>
     <GlobalCss/>
