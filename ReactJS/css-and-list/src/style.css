@@ -5,3 +5,16 @@ h1{
     text-align: center;
     background: linear-gradient(to right,rgb(226, 118, 136),rgb(216, 88, 216));
 }
+.para
+{
+    text-align: center;
+    color: cornflowerblue;
+    font-weight: bold;
+}
+#lorem
+{
+    color: brown;
+    text-align: center;
+    margin: 20px;
+}
+
