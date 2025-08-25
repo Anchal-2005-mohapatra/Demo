@@ -40,15 +40,19 @@ import StyleObject from "./Components/StyleObject";
 import GlobalCss from "./Components/GlobalCss";
 import ModuleCss from "./Components/ModuleCss";
 import Product from "./Components/Product";
+import ListData from "./Components/ListData";
+import ListEffect from "./Components/ListEffect";
 const App=()=>
 {
  return(<div>
-    Css and list
-    <Product name="bird" price="300" rating="4.3" />
+    {/* Css and list */}
+    {/* <Product name="bird" price="300" rating="4.3" />
     <InlineCss />
     <StyleObject/>
     <GlobalCss/>
-    <ModuleCss/>
+    <ModuleCss/> */}
+    {/* <ListData /> */}
+    <ListEffect/>
   </div>)  
 }
 export default App;

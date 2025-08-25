@@ -1,5 +1,5 @@
 @import "tailwindcss";
-h1{
+/* h1{
     color: maroon;
     background-color: rgba(192, 150, 231, 0.43);
     text-align: center;
@@ -10,7 +10,7 @@ h1{
     text-align: center;
     color: cornflowerblue;
     font-weight: bold;
-}
+} */
 #lorem
 {
     color: brown;
