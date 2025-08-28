@@ -9,11 +9,11 @@ const Counter=()=>
     }
     const decrement =()=>
     {
-        setCount(count-1)
+        if (count == 0) 
+        {setCount(0)}
+    else{ setCount(count-1)}
     }
-    // if (count == 0) 
-    //     {setCount(0)}
-    // else{ setCount(count-1)}
+   
  return(
     <div>
         <h1>count:{count} </h1>
