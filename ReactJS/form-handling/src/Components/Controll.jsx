@@ -1,5 +1,10 @@
 import React, { useState } from 'react'
 
+
+
+const data = {
+    name, email, number
+}
  const Controll = () => {
     const [name, setName] = useState("");
     const [email, SetEmail] = useState("");
@@ -30,6 +35,14 @@ import React, { useState } from 'react'
                 <input type="number" placeholder='enter your no' value={number} onChange={(e)=>{setNumber(e.target.value)}} />
                 <button onClick={button} className='border-2 rounded-2xl text-md text-white p-2 bg-blue-700' >Submit</button>
             </form>
+            {/* <div>
+                <h1>naeme : {name}</h1>
+                <h2>email : {email}</h2>
+                <h2>number :{number}</h2>
+            </div> */}
+            {/* <div>
+                name= {data.name}
+            </div> */}
         </div>
     )
 }

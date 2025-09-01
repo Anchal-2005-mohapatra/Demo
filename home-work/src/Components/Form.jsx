@@ -9,6 +9,7 @@ const Form = () => {
     const [address, setAddress] = useState("");
     const [email, setEmail] = useState("");
     const [display, setDisplay] = useState("");
+    
     // const [gender, setGender] = useState("");
 
 
