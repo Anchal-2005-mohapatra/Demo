@@ -45,7 +45,7 @@ const PostDetails = () => {
   return (
     <div className='h-screen flex flex-cols bg-pink-100 justify-center items-center  '>
       {alert && (<p>{alert}</p>)}
-      <div className=' m-4 bg-[#5682B1] p-8 rounded text-xl min-w-[90vw] max-w-3xl'>  
+      <div className=' m-4 bg-[#5682B1] p-8 rounded text-xl min-w-[400px] w-[500px]'>  
         <h1 className='p-3'>title:{getPost.title}</h1>
         <h1 className='p-3'>description :{getPost.description}</h1>
         <div className='flex justify-between p-3'>

@@ -18,6 +18,8 @@ export const details = createContext();
 
 
 {/* context provider used to provider used to send the data globally to the other component .  */}
+
+
      {/* <details.Provider value={{name:"Anchal", age:20, address:"BBSR"}}>   <AllStudent/> </details.Provider> */}
    
     </div>

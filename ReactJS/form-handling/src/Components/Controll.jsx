@@ -2,9 +2,7 @@ import React, { useState } from 'react'
 
 
 
-const data = {
-    name, email, number
-}
+
  const Controll = () => {
     const [name, setName] = useState("");
     const [email, SetEmail] = useState("");

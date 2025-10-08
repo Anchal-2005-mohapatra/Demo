@@ -29,7 +29,7 @@ const Home = () => {
         <div className=' h-screen  '>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols:3 xl:grid-cols-4 gap-1 m-4 '>
                 {allPost.map((post) => (
-                    <div className='grid w-[360px] h-[250px] mx-2 py-4 bg-blue-100 m-4 px-4 rounded-2xl  '>
+                    <div className='grid w-[360px] h-[250px] mx-2 py-4 bg-blue-100 m-4 px-4 rounded-2xl' key={post.id}>
                         <h1><Link to={`post-details/${post.id}`}>Title:{post.title}</Link></h1>
                         <h1>Description:{post.description.slice(0, 100) + "......"}</h1>
                         <button className= ' text-white bg-blue-600 rounded' onClick={()=>{navigate(`/post-details/${post.id}`)}}>Seemore</button>
